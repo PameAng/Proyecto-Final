@@ -32,6 +32,7 @@ namespace Proyecto_final_2
         {
             FormAgendarCita form = new FormAgendarCita(citas, ref ultimoId);
             form.ShowDialog();
+        form.WindowState=FormWindowState.Maximized;
 
         }
 
@@ -50,10 +51,12 @@ namespace Proyecto_final_2
 
             FormMostrarCitas form = new FormMostrarCitas(citas);
             form.ShowDialog();
+            form.WindowState = FormWindowState.Maximized;
         }
 
         private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             if (citas.Count == 0)
             {
                 MessageBox.Show("No hay citas registradas para actualizar.");
