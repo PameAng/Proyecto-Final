@@ -183,6 +183,16 @@ namespace Proyecto_Final__Sistema_de_Spa_.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_martin_de_arriba_25131490_13180496 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-martin-de-arriba-25131490-13180496", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SpaFondo1 {
             get {
                 object obj = ResourceManager.GetObject("SpaFondo1", resourceCulture);
