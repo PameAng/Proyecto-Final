@@ -170,5 +170,14 @@
   <ItemGroup>
     <None Include="Resources\icons8-visible-48 %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buscar-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-guardar-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-martin-de-arriba-25131490-13180496.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
