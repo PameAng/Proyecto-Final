@@ -143,6 +143,26 @@ namespace Proyecto_Final__Sistema_de_Spa_.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_visible_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-visible-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_visible_48__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-visible-48 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SpaFondo1 {
             get {
                 object obj = ResourceManager.GetObject("SpaFondo1", resourceCulture);
