@@ -155,5 +155,14 @@
   <ItemGroup>
     <None Include="Resources\flores-rojas-en-ramas_3840x2400_xtrafondos.com.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exportar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-actualizar-carpeta-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

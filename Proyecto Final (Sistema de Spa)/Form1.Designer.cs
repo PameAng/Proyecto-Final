@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.timerSlideshow = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxSlideshow = new System.Windows.Forms.PictureBox();
             this.btnSalir = new Guna.UI2.WinForms.Guna2Button();
             this.btnExportarCSV = new Guna.UI2.WinForms.Guna2Button();
             this.BtnElimninar = new Guna.UI2.WinForms.Guna2Button();
@@ -38,9 +41,6 @@
             this.BtnAgendar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnMostrar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnHome = new Guna.UI2.WinForms.Guna2Button();
-            this.panelContenedor = new System.Windows.Forms.Panel();
-            this.pictureBoxSlideshow = new System.Windows.Forms.PictureBox();
-            this.timerSlideshow = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSlideshow)).BeginInit();
@@ -59,10 +59,40 @@
             this.panel1.Controls.Add(this.BtnHome);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(260, 747);
+            this.panel1.Size = new System.Drawing.Size(292, 934);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Controls.Add(this.pictureBoxSlideshow);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(292, 0);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1397, 934);
+            this.panelContenedor.TabIndex = 2;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
+            // 
+            // timerSlideshow
+            // 
+            this.timerSlideshow.Interval = 60;
+            this.timerSlideshow.Tick += new System.EventHandler(this.timerSlideshow_Tick);
+            // 
+            // pictureBoxSlideshow
+            // 
+            this.pictureBoxSlideshow.BackColor = System.Drawing.Color.Teal;
+            this.pictureBoxSlideshow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxSlideshow.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxSlideshow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBoxSlideshow.Name = "pictureBoxSlideshow";
+            this.pictureBoxSlideshow.Size = new System.Drawing.Size(1397, 934);
+            this.pictureBoxSlideshow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSlideshow.TabIndex = 0;
+            this.pictureBoxSlideshow.TabStop = false;
+            this.pictureBoxSlideshow.Click += new System.EventHandler(this.pictureBoxSlideshow_Click);
             // 
             // btnSalir
             // 
@@ -77,9 +107,10 @@
             this.btnSalir.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_cerrar_ventana_48;
             this.btnSalir.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSalir.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSalir.Location = new System.Drawing.Point(-5, 684);
+            this.btnSalir.Location = new System.Drawing.Point(-6, 855);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(260, 62);
+            this.btnSalir.Size = new System.Drawing.Size(292, 78);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
@@ -94,11 +125,12 @@
             this.btnExportarCSV.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportarCSV.ForeColor = System.Drawing.Color.White;
             this.btnExportarCSV.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnExportarCSV.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
+            this.btnExportarCSV.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_exportar_50;
             this.btnExportarCSV.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExportarCSV.Location = new System.Drawing.Point(-8, 498);
+            this.btnExportarCSV.Location = new System.Drawing.Point(-9, 622);
+            this.btnExportarCSV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExportarCSV.Name = "btnExportarCSV";
-            this.btnExportarCSV.Size = new System.Drawing.Size(278, 62);
+            this.btnExportarCSV.Size = new System.Drawing.Size(313, 78);
             this.btnExportarCSV.TabIndex = 5;
             this.btnExportarCSV.Text = "Exportar ";
             this.btnExportarCSV.Click += new System.EventHandler(this.guna2Button6_Click);
@@ -113,11 +145,12 @@
             this.BtnElimninar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnElimninar.ForeColor = System.Drawing.Color.White;
             this.BtnElimninar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BtnElimninar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_eliminar_100;
-            this.BtnElimninar.ImageSize = new System.Drawing.Size(55, 45);
-            this.BtnElimninar.Location = new System.Drawing.Point(-1, 403);
+            this.BtnElimninar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_eliminar_50;
+            this.BtnElimninar.ImageSize = new System.Drawing.Size(30, 30);
+            this.BtnElimninar.Location = new System.Drawing.Point(-1, 504);
+            this.BtnElimninar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnElimninar.Name = "BtnElimninar";
-            this.BtnElimninar.Size = new System.Drawing.Size(260, 62);
+            this.BtnElimninar.Size = new System.Drawing.Size(292, 78);
             this.BtnElimninar.TabIndex = 4;
             this.BtnElimninar.Text = "Eliminar";
             this.BtnElimninar.Click += new System.EventHandler(this.BtnElimninar_Click);
@@ -132,11 +165,12 @@
             this.BtnActualizar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnActualizar.ForeColor = System.Drawing.Color.White;
             this.BtnActualizar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BtnActualizar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
+            this.BtnActualizar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_actualizar_carpeta_48;
             this.BtnActualizar.ImageSize = new System.Drawing.Size(30, 30);
-            this.BtnActualizar.Location = new System.Drawing.Point(-1, 319);
+            this.BtnActualizar.Location = new System.Drawing.Point(-1, 399);
+            this.BtnActualizar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(260, 62);
+            this.BtnActualizar.Size = new System.Drawing.Size(292, 78);
             this.BtnActualizar.TabIndex = 3;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
@@ -153,9 +187,10 @@
             this.BtnAgendar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnAgendar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_spa_64;
             this.BtnAgendar.ImageSize = new System.Drawing.Size(35, 35);
-            this.BtnAgendar.Location = new System.Drawing.Point(-1, 235);
+            this.BtnAgendar.Location = new System.Drawing.Point(-1, 294);
+            this.BtnAgendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnAgendar.Name = "BtnAgendar";
-            this.BtnAgendar.Size = new System.Drawing.Size(260, 62);
+            this.BtnAgendar.Size = new System.Drawing.Size(292, 78);
             this.BtnAgendar.TabIndex = 2;
             this.BtnAgendar.Text = "Agendar";
             this.BtnAgendar.Click += new System.EventHandler(this.BtnAgendar_Click);
@@ -172,9 +207,10 @@
             this.BtnMostrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnMostrar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
             this.BtnMostrar.ImageSize = new System.Drawing.Size(30, 30);
-            this.BtnMostrar.Location = new System.Drawing.Point(-8, 144);
+            this.BtnMostrar.Location = new System.Drawing.Point(-9, 180);
+            this.BtnMostrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnMostrar.Name = "BtnMostrar";
-            this.BtnMostrar.Size = new System.Drawing.Size(278, 62);
+            this.BtnMostrar.Size = new System.Drawing.Size(313, 78);
             this.BtnMostrar.TabIndex = 1;
             this.BtnMostrar.Text = "Mostrar";
             this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
@@ -192,50 +228,25 @@
             this.BtnHome.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnHome.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
             this.BtnHome.ImageSize = new System.Drawing.Size(35, 35);
-            this.BtnHome.Location = new System.Drawing.Point(-19, 50);
+            this.BtnHome.Location = new System.Drawing.Point(-21, 62);
+            this.BtnHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnHome.Name = "BtnHome";
-            this.BtnHome.Size = new System.Drawing.Size(289, 62);
+            this.BtnHome.Size = new System.Drawing.Size(325, 78);
             this.BtnHome.TabIndex = 0;
             this.BtnHome.Text = "Home";
             // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Controls.Add(this.pictureBoxSlideshow);
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(260, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1241, 747);
-            this.panelContenedor.TabIndex = 2;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
-            // 
-            // pictureBoxSlideshow
-            // 
-            this.pictureBoxSlideshow.BackColor = System.Drawing.Color.Teal;
-            this.pictureBoxSlideshow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxSlideshow.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxSlideshow.Name = "pictureBoxSlideshow";
-            this.pictureBoxSlideshow.Size = new System.Drawing.Size(1241, 747);
-            this.pictureBoxSlideshow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxSlideshow.TabIndex = 0;
-            this.pictureBoxSlideshow.TabStop = false;
-            this.pictureBoxSlideshow.Click += new System.EventHandler(this.pictureBoxSlideshow_Click);
-            // 
-            // timerSlideshow
-            // 
-            this.timerSlideshow.Interval = 60;
-            this.timerSlideshow.Tick += new System.EventHandler(this.timerSlideshow_Tick);
-            // 
             // frmHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(1501, 747);
+            this.ClientSize = new System.Drawing.Size(1689, 934);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmHome";
             this.Text = "M&P System ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
