@@ -46,7 +46,7 @@
             // 
             // txtTerapeuta
             // 
-            this.txtTerapeuta.Location = new System.Drawing.Point(115, 179);
+            this.txtTerapeuta.Location = new System.Drawing.Point(161, 183);
             this.txtTerapeuta.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTerapeuta.Name = "txtTerapeuta";
             this.txtTerapeuta.Size = new System.Drawing.Size(206, 26);
@@ -54,7 +54,7 @@
             // 
             // txtServicio
             // 
-            this.txtServicio.Location = new System.Drawing.Point(109, 124);
+            this.txtServicio.Location = new System.Drawing.Point(155, 128);
             this.txtServicio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtServicio.Name = "txtServicio";
             this.txtServicio.Size = new System.Drawing.Size(212, 26);
@@ -62,7 +62,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(109, 81);
+            this.txtNombre.Location = new System.Drawing.Point(155, 85);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(212, 26);
@@ -70,7 +70,7 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(109, 47);
+            this.txtID.Location = new System.Drawing.Point(155, 51);
             this.txtID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(112, 26);
@@ -84,7 +84,7 @@
             this.btnBuscar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(37, 326);
+            this.btnBuscar.Location = new System.Drawing.Point(165, 382);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(202, 56);
@@ -100,7 +100,7 @@
             this.btnGuardar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(297, 326);
+            this.btnGuardar.Location = new System.Drawing.Point(439, 382);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(202, 56);
@@ -130,54 +130,60 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 53);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(26, 20);
+            this.label1.Size = new System.Drawing.Size(35, 24);
             this.label1.TabIndex = 9;
             this.label1.Text = "ID";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(13, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 20);
+            this.label2.Size = new System.Drawing.Size(90, 24);
             this.label2.TabIndex = 10;
             this.label2.Text = "Nombre";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(14, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 20);
+            this.label3.Size = new System.Drawing.Size(91, 24);
             this.label3.TabIndex = 11;
             this.label3.Text = "Servicio";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(14, 182);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 20);
+            this.label4.Size = new System.Drawing.Size(113, 24);
             this.label4.TabIndex = 12;
             this.label4.Text = "Terapeuta";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(435, 84);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 20);
+            this.label5.Size = new System.Drawing.Size(70, 24);
             this.label5.TabIndex = 13;
             this.label5.Text = "Fecha";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(435, 130);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 20);
+            this.label6.Size = new System.Drawing.Size(58, 24);
             this.label6.TabIndex = 14;
             this.label6.Text = "Hora";
             // 
@@ -202,7 +208,6 @@
             this.Controls.Add(this.txtTerapeuta);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormActualizarCita";
-            this.Text = "FormActualizarCita";
             this.Load += new System.EventHandler(this.FormActualizarCita_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

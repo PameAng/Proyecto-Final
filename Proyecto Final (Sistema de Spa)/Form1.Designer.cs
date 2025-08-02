@@ -205,7 +205,7 @@
             this.BtnMostrar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMostrar.ForeColor = System.Drawing.Color.White;
             this.BtnMostrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BtnMostrar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
+            this.BtnMostrar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_visible_48__1_;
             this.BtnMostrar.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnMostrar.Location = new System.Drawing.Point(-9, 180);
             this.BtnMostrar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
