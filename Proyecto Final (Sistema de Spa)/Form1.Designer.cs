@@ -80,9 +80,9 @@
             this.btnSalir.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnSalir.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_cerrar_ventana_48;
             this.btnSalir.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSalir.Location = new System.Drawing.Point(-12, 644);
+            this.btnSalir.Location = new System.Drawing.Point(42, 646);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(230, 72);
+            this.btnSalir.Size = new System.Drawing.Size(219, 72);
             this.btnSalir.TabIndex = 6;
             this.btnSalir.Text = "Salir";
             this.btnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
@@ -101,7 +101,7 @@
             this.btnExportarCSV.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnExportarCSV.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
             this.btnExportarCSV.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExportarCSV.Location = new System.Drawing.Point(-1, 507);
+            this.btnExportarCSV.Location = new System.Drawing.Point(42, 506);
             this.btnExportarCSV.Name = "btnExportarCSV";
             this.btnExportarCSV.Size = new System.Drawing.Size(219, 74);
             this.btnExportarCSV.TabIndex = 5;
@@ -122,7 +122,7 @@
             this.BtnElimninar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnElimninar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_eliminar_100;
             this.BtnElimninar.ImageSize = new System.Drawing.Size(55, 45);
-            this.BtnElimninar.Location = new System.Drawing.Point(-1, 377);
+            this.BtnElimninar.Location = new System.Drawing.Point(42, 379);
             this.BtnElimninar.Name = "BtnElimninar";
             this.BtnElimninar.Size = new System.Drawing.Size(219, 71);
             this.BtnElimninar.TabIndex = 4;
@@ -143,9 +143,9 @@
             this.BtnActualizar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnActualizar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
             this.BtnActualizar.ImageSize = new System.Drawing.Size(30, 30);
-            this.BtnActualizar.Location = new System.Drawing.Point(-12, 265);
+            this.BtnActualizar.Location = new System.Drawing.Point(42, 266);
             this.BtnActualizar.Name = "BtnActualizar";
-            this.BtnActualizar.Size = new System.Drawing.Size(230, 69);
+            this.BtnActualizar.Size = new System.Drawing.Size(219, 69);
             this.BtnActualizar.TabIndex = 3;
             this.BtnActualizar.Text = "Actualizar";
             this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
@@ -164,7 +164,7 @@
             this.BtnAgendar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnAgendar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_spa_64;
             this.BtnAgendar.ImageSize = new System.Drawing.Size(35, 35);
-            this.BtnAgendar.Location = new System.Drawing.Point(-1, 153);
+            this.BtnAgendar.Location = new System.Drawing.Point(42, 154);
             this.BtnAgendar.Name = "BtnAgendar";
             this.BtnAgendar.Size = new System.Drawing.Size(219, 71);
             this.BtnAgendar.TabIndex = 2;
@@ -186,7 +186,7 @@
             this.BtnMostrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnMostrar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
             this.BtnMostrar.ImageSize = new System.Drawing.Size(30, 30);
-            this.BtnMostrar.Location = new System.Drawing.Point(-1, 35);
+            this.BtnMostrar.Location = new System.Drawing.Point(42, 38);
             this.BtnMostrar.Name = "BtnMostrar";
             this.BtnMostrar.Size = new System.Drawing.Size(219, 77);
             this.BtnMostrar.TabIndex = 1;

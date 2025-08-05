@@ -40,7 +40,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.grpDetalles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -49,7 +48,7 @@
             // lblID
             // 
             this.lblID.AutoSize = true;
-            this.lblID.Location = new System.Drawing.Point(398, 130);
+            this.lblID.Location = new System.Drawing.Point(337, 30);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(82, 16);
             this.lblID.TabIndex = 0;
@@ -84,7 +83,7 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(171, 32);
+            this.txtID.Location = new System.Drawing.Point(439, 30);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 22);
             this.txtID.TabIndex = 4;
@@ -140,7 +139,6 @@
             // 
             // grpDetalles
             // 
-            this.grpDetalles.Controls.Add(this.txtID);
             this.grpDetalles.Location = new System.Drawing.Point(327, 95);
             this.grpDetalles.Name = "grpDetalles";
             this.grpDetalles.Size = new System.Drawing.Size(415, 299);
@@ -178,6 +176,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -192,8 +191,6 @@
             this.Name = "FormEliminarCita";
             this.Text = "FormEliminarCita";
             this.Load += new System.EventHandler(this.FormEliminarCita_Load);
-            this.grpDetalles.ResumeLayout(false);
-            this.grpDetalles.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
