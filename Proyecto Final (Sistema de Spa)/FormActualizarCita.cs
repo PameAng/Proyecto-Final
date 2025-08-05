@@ -71,5 +71,15 @@ namespace Proyecto_Final__Sistema_de_Spa_
                 this.Close();
             }
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

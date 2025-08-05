@@ -83,6 +83,16 @@ namespace Proyecto_Final__Sistema_de_Spa_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_buscar_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_buscar_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cerrar_ventana_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cerrar-ventana-48", resourceCulture);
@@ -106,6 +116,16 @@ namespace Proyecto_Final__Sistema_de_Spa_.Properties {
         internal static System.Drawing.Bitmap icons8_spa_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-spa-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_08_05_095026 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-08-05 095026", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
