@@ -29,20 +29,49 @@ namespace Proyecto_Final__Sistema_de_Spa_
         {
             imagenesSlideshow = new List<Image>()
     {
-        Properties.Resources.SpaFondo1,  // Asegúrate que estos nombres coincidan con tus imágenes
+        Properties.Resources.SpaFondo1,  
         Properties.Resources.SpaFondo2,
         Properties.Resources.SpaFondo3
+        
     };
+            //Colores
+            pictureBox1.BackColor = ColorTranslator.FromHtml("#a3b18a"); //menu
+            panel1.BackColor = ColorTranslator.FromHtml("#344e41"); //panel
 
-            pictureBoxSlideshow.Image = imagenesSlideshow[indiceActual];
-            pictureBoxSlideshow.Visible = true;
+            
+            Color backColor = ColorTranslator.FromHtml("#588157");  // verde oscuro
+            Color foreColor = Color.White;
+
+            btnHome.FillColor = backColor;
+            btnHome.ForeColor = foreColor;
+
+            btnMostrar.FillColor = backColor;
+            btnMostrar.ForeColor = foreColor;
+
+            btnAgendar.FillColor = backColor;
+            btnAgendar.ForeColor = foreColor;
+
+            btnActualizar.FillColor = backColor;
+            btnActualizar.ForeColor = foreColor;
+
+            btnEliminar.FillColor = backColor;
+            btnEliminar.ForeColor = foreColor;
+
+            btnExportarCSV.FillColor = backColor;
+            btnExportarCSV.ForeColor = foreColor;
+
+            btnSalir.FillColor = backColor;
+            btnSalir.ForeColor = foreColor;
+
+            pictureBox1.Image = imagenesSlideshow[indiceActual];
+            pictureBox1.Visible = true;
 
             timerSlideshow.Start();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
@@ -142,7 +171,7 @@ namespace Proyecto_Final__Sistema_de_Spa_
         }
         private void AbrirFormularioEnPanel(Form formulario)
         {
-            pictureBoxSlideshow.Visible = false;
+            pictureBox1.Visible = false;
             timerSlideshow.Stop();
 
             panelContenedor.Controls.Clear();
@@ -162,7 +191,7 @@ namespace Proyecto_Final__Sistema_de_Spa_
 
         private void pictureBoxSlideshow_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void timerSlideshow_Tick(object sender, EventArgs e)
@@ -171,7 +200,7 @@ namespace Proyecto_Final__Sistema_de_Spa_
             if (indiceActual >= imagenesSlideshow.Count)
                 indiceActual = 0;
 
-            pictureBoxSlideshow.Image = imagenesSlideshow[indiceActual];
+            pictureBox1.Image = imagenesSlideshow[indiceActual];
         }
     }
     }
