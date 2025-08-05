@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.btnSalir = new Guna.UI2.WinForms.Guna2Button();
             this.btnExportarCSV = new Guna.UI2.WinForms.Guna2Button();
             this.BtnElimninar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnActualizar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAgendar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnMostrar = new Guna.UI2.WinForms.Guna2Button();
-            this.panelContenedor = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.RosyBrown;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.btnExportarCSV);
@@ -53,12 +53,23 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(219, 747);
+            this.panel1.Size = new System.Drawing.Size(318, 747);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(318, 0);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1183, 747);
+            this.panelContenedor.TabIndex = 2;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
+            // 
             // btnSalir
             // 
+            this.btnSalir.BorderColor = System.Drawing.Color.White;
+            this.btnSalir.BorderThickness = 2;
             this.btnSalir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSalir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSalir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -66,9 +77,8 @@
             this.btnSalir.FillColor = System.Drawing.Color.Black;
             this.btnSalir.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnSalir.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnSalir.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_cerrar_ventana_48;
-            this.btnSalir.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSalir.ImageSize = new System.Drawing.Size(30, 30);
             this.btnSalir.Location = new System.Drawing.Point(-12, 644);
             this.btnSalir.Name = "btnSalir";
@@ -79,6 +89,8 @@
             // 
             // btnExportarCSV
             // 
+            this.btnExportarCSV.BorderColor = System.Drawing.Color.White;
+            this.btnExportarCSV.BorderThickness = 2;
             this.btnExportarCSV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExportarCSV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExportarCSV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -98,6 +110,8 @@
             // 
             // BtnElimninar
             // 
+            this.BtnElimninar.BorderColor = System.Drawing.Color.White;
+            this.BtnElimninar.BorderThickness = 2;
             this.BtnElimninar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtnElimninar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BtnElimninar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -117,6 +131,8 @@
             // 
             // BtnActualizar
             // 
+            this.BtnActualizar.BorderColor = System.Drawing.Color.White;
+            this.BtnActualizar.BorderThickness = 2;
             this.BtnActualizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtnActualizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BtnActualizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -136,6 +152,8 @@
             // 
             // BtnAgendar
             // 
+            this.BtnAgendar.BorderColor = System.Drawing.Color.White;
+            this.BtnAgendar.BorderThickness = 2;
             this.BtnAgendar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtnAgendar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BtnAgendar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -155,6 +173,8 @@
             // 
             // BtnMostrar
             // 
+            this.BtnMostrar.BorderColor = System.Drawing.Color.White;
+            this.BtnMostrar.BorderThickness = 2;
             this.BtnMostrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtnMostrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BtnMostrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -162,6 +182,7 @@
             this.BtnMostrar.FillColor = System.Drawing.Color.Black;
             this.BtnMostrar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnMostrar.ForeColor = System.Drawing.Color.White;
+            this.BtnMostrar.HoverState.BorderColor = System.Drawing.Color.White;
             this.BtnMostrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnMostrar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
             this.BtnMostrar.ImageSize = new System.Drawing.Size(30, 30);
@@ -171,15 +192,6 @@
             this.BtnMostrar.TabIndex = 1;
             this.BtnMostrar.Text = "Mostrar";
             this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(219, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1282, 747);
-            this.panelContenedor.TabIndex = 2;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // frmHome
             // 

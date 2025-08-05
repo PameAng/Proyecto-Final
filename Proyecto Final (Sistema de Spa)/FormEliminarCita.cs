@@ -70,5 +70,15 @@ namespace Proyecto_Final__Sistema_de_Spa_
         {
             this.Close();
         }
+
+        private void grpDetalles_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -129,5 +129,15 @@ namespace Proyecto_Final__Sistema_de_Spa_.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_08_05_151247 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-08-05 151247", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
