@@ -17,9 +17,6 @@ namespace Proyecto_Final__Sistema_de_Spa_
     {
         public List<Cita> listaCitas = new List<Cita>();
         public int siguienteID = 1;
-
-        private List<Image> imagenesSlideshow;
-        private int indiceActual = 0;
         public frmHome()
         {
             InitializeComponent();
@@ -27,51 +24,12 @@ namespace Proyecto_Final__Sistema_de_Spa_
 
         private void frmHome_Load(object sender, EventArgs e)
         {
-            imagenesSlideshow = new List<Image>()
-    {
-        Properties.Resources.SpaFondo1,  
-        Properties.Resources.SpaFondo2,
-        Properties.Resources.SpaFondo3
-        
-    };
-            //Colores
-            pictureBox1.BackColor = ColorTranslator.FromHtml("#a3b18a"); //menu
-            panel1.BackColor = ColorTranslator.FromHtml("#344e41"); //panel
 
-            
-            Color backColor = ColorTranslator.FromHtml("#588157");  // verde oscuro
-            Color foreColor = Color.White;
-
-            btnHome.FillColor = backColor;
-            btnHome.ForeColor = foreColor;
-
-            btnMostrar.FillColor = backColor;
-            btnMostrar.ForeColor = foreColor;
-
-            btnAgendar.FillColor = backColor;
-            btnAgendar.ForeColor = foreColor;
-
-            btnActualizar.FillColor = backColor;
-            btnActualizar.ForeColor = foreColor;
-
-            btnEliminar.FillColor = backColor;
-            btnEliminar.ForeColor = foreColor;
-
-            btnExportarCSV.FillColor = backColor;
-            btnExportarCSV.ForeColor = foreColor;
-
-            btnSalir.FillColor = backColor;
-            btnSalir.ForeColor = foreColor;
-
-            pictureBox1.Image = imagenesSlideshow[indiceActual];
-            pictureBox1.Visible = true;
-
-            timerSlideshow.Start();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
@@ -169,38 +127,10 @@ namespace Proyecto_Final__Sistema_de_Spa_
             panelContenedor.Controls.Add(formEliminar);
             formEliminar.Show();
         }
-        private void AbrirFormularioEnPanel(Form formulario)
-        {
-            pictureBox1.Visible = false;
-            timerSlideshow.Stop();
-
-            panelContenedor.Controls.Clear();
-
-            formulario.TopLevel = false;
-            formulario.FormBorderStyle = FormBorderStyle.None;
-            formulario.Dock = DockStyle.Fill;
-
-            panelContenedor.Controls.Add(formulario);
-            formulario.Show();
-        }
 
         private void panelContenedor_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void pictureBoxSlideshow_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void timerSlideshow_Tick(object sender, EventArgs e)
-        {
-            indiceActual++;
-            if (indiceActual >= imagenesSlideshow.Count)
-                indiceActual = 0;
-
-            pictureBox1.Image = imagenesSlideshow[indiceActual];
         }
     }
     }
