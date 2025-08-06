@@ -81,6 +81,7 @@
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 28);
             this.dtpFecha.TabIndex = 7;
+            this.dtpFecha.Value = new System.DateTime(2025, 8, 6, 20, 51, 49, 0);
             // 
             // dtpHora
             // 
@@ -175,7 +176,7 @@
             this.btnGuardar.FillColor = System.Drawing.Color.DeepPink;
             this.btnGuardar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.HoverState.FillColor = System.Drawing.Color.DarkOrange;
+            this.btnGuardar.HoverState.FillColor = System.Drawing.Color.HotPink;
             this.btnGuardar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_guardar_40;
             this.btnGuardar.ImageSize = new System.Drawing.Size(35, 35);
             this.btnGuardar.Location = new System.Drawing.Point(866, 538);
@@ -195,7 +196,7 @@
             this.btnBuscar.FillColor = System.Drawing.Color.DeepPink;
             this.btnBuscar.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.HoverState.FillColor = System.Drawing.Color.DarkOrange;
+            this.btnBuscar.HoverState.FillColor = System.Drawing.Color.HotPink;
             this.btnBuscar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_buscar_64;
             this.btnBuscar.ImageSize = new System.Drawing.Size(40, 40);
             this.btnBuscar.Location = new System.Drawing.Point(814, 207);

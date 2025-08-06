@@ -13,12 +13,27 @@ namespace Proyecto_Final__Sistema_de_Spa_
 {
     public partial class FormAgendarCita : Form
     {
+        private void LimpiarCampos()
+        {
+            txtNombreCliente.Text = "";
+            dtpFecha.Value = DateTime.Now;
+            dtpHora.Value = DateTime.Now;
+            cmbServicio.SelectedIndex = -1;
+            textBoxDuracion.Text = "";
+            txtTerapeuta.Text = "";
+            txtEstado.Text = "";
+            txtRestante.Text = "";
+            textBoxID.Text = "";
+        }
         private frmHome homeForm;
         public FormAgendarCita(frmHome home)
+
         {
             InitializeComponent();
             homeForm = home;
         }
+
+
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
@@ -27,6 +42,8 @@ namespace Proyecto_Final__Sistema_de_Spa_
 
         private void comboBoxServicio_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbServicio.SelectedItem == null)
+                return;
             switch (cmbServicio.SelectedItem.ToString())
             {
                 case "masaje":
@@ -77,7 +94,7 @@ namespace Proyecto_Final__Sistema_de_Spa_
 
             homeForm.listaCitas.Add(cita);
             MessageBox.Show("Cita agendada con éxito.");
-            this.Close();
+            
         }
 
         private void FormAgendarCita_Load(object sender, EventArgs e)
@@ -120,6 +137,12 @@ namespace Proyecto_Final__Sistema_de_Spa_
                 tb.Text = limpio;
                 tb.SelectionStart = pos > 0 ? pos - 1 : 0;
             }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+            MessageBox.Show("Listo para ingresar una nueva cita.", "Nueva Cita", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

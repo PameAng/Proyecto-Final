@@ -68,7 +68,7 @@ namespace Proyecto_Final__Sistema_de_Spa_
                 citaActual.CalcularDuracion();
 
                 MessageBox.Show("Cita actualizada correctamente.");
-                this.Close();
+                
             }
         }
 

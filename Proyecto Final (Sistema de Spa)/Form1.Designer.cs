@@ -38,8 +38,12 @@
             this.BtnAgendar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnMostrar = new Guna.UI2.WinForms.Guna2Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.pictureBoxBanner = new System.Windows.Forms.PictureBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.timerBanner = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
+            this.panelContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -163,7 +167,7 @@
             this.BtnAgendar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnAgendar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_spa_64;
             this.BtnAgendar.ImageSize = new System.Drawing.Size(35, 35);
-            this.BtnAgendar.Location = new System.Drawing.Point(42, 154);
+            this.BtnAgendar.Location = new System.Drawing.Point(42, 35);
             this.BtnAgendar.Name = "BtnAgendar";
             this.BtnAgendar.Size = new System.Drawing.Size(219, 71);
             this.BtnAgendar.TabIndex = 2;
@@ -186,7 +190,7 @@
             this.BtnMostrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnMostrar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
             this.BtnMostrar.ImageSize = new System.Drawing.Size(30, 30);
-            this.BtnMostrar.Location = new System.Drawing.Point(42, 38);
+            this.BtnMostrar.Location = new System.Drawing.Point(42, 140);
             this.BtnMostrar.Name = "BtnMostrar";
             this.BtnMostrar.Size = new System.Drawing.Size(219, 77);
             this.BtnMostrar.TabIndex = 1;
@@ -195,12 +199,31 @@
             // 
             // panelContenedor
             // 
+            this.panelContenedor.Controls.Add(this.pictureBoxBanner);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(318, 0);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1183, 747);
             this.panelContenedor.TabIndex = 2;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
+            // 
+            // pictureBoxBanner
+            // 
+            this.pictureBoxBanner.BackColor = System.Drawing.Color.Pink;
+            this.pictureBoxBanner.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxBanner.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxBanner.Name = "pictureBoxBanner";
+            this.pictureBoxBanner.Size = new System.Drawing.Size(1183, 747);
+            this.pictureBoxBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBanner.TabIndex = 0;
+            this.pictureBoxBanner.TabStop = false;
+            this.pictureBoxBanner.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // timerBanner
+            // 
+            this.timerBanner.Enabled = true;
+            this.timerBanner.Interval = 3000;
+            this.timerBanner.Tick += new System.EventHandler(this.timerBanner_Tick);
             // 
             // frmHome
             // 
@@ -218,6 +241,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmHome_Load);
             this.panel1.ResumeLayout(false);
+            this.panelContenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -233,6 +258,8 @@
         private Guna.UI2.WinForms.Guna2Button btnSalir;
         private System.Windows.Forms.Panel panelContenedor;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private System.Windows.Forms.PictureBox pictureBoxBanner;
+        private System.Windows.Forms.Timer timerBanner;
     }
 }
 

@@ -155,5 +155,14 @@
   <ItemGroup>
     <None Include="Resources\icons8_guardar_401.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-elly-fairytale-3865676 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-elly-fairytale-3865792 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ale-romo-CLiwQXx7kT8-unsplash.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

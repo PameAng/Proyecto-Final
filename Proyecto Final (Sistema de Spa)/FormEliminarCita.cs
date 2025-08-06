@@ -61,7 +61,7 @@ namespace Proyecto_Final__Sistema_de_Spa_
                 {
                     citas.Remove(citaSeleccionada);
                     MessageBox.Show("Cita eliminada.");
-                    this.Close(); 
+                    
                 }
             }
         }

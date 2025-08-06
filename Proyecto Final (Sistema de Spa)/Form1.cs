@@ -17,6 +17,9 @@ namespace Proyecto_Final__Sistema_de_Spa_
     {
         public List<Cita> listaCitas = new List<Cita>();
         public int siguienteID = 1;
+
+        private List<Image> imagenesBanner = new List<Image>();
+        private int indiceImagen = 0;
         public frmHome()
         {
             InitializeComponent();
@@ -24,7 +27,12 @@ namespace Proyecto_Final__Sistema_de_Spa_
 
         private void frmHome_Load(object sender, EventArgs e)
         {
+            imagenesBanner.Add(Properties.Resources.Banner1);
+            imagenesBanner.Add(Properties.Resources.Banner2);
+            imagenesBanner.Add(Properties.Resources.Banner3);
 
+            // Muestra la primera imagen
+            pictureBoxBanner.Image = imagenesBanner[0];
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -133,7 +141,19 @@ namespace Proyecto_Final__Sistema_de_Spa_
 
         }
 
-        
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timerBanner_Tick(object sender, EventArgs e)
+        {
+            indiceImagen++;
+            if (indiceImagen >= imagenesBanner.Count)
+                indiceImagen = 0;
+
+            pictureBoxBanner.Image = imagenesBanner[indiceImagen];
+        }
     }
     }
 

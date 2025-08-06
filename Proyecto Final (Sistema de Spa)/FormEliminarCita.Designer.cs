@@ -36,8 +36,8 @@
             this.btnEliminar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.grpDetalles = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblServicio = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grpDetalles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -152,6 +152,18 @@
             this.grpDetalles.Text = "Datos ";
             this.grpDetalles.Enter += new System.EventHandler(this.grpDetalles_Enter);
             // 
+            // lblServicio
+            // 
+            this.lblServicio.AutoSize = true;
+            this.lblServicio.BackColor = System.Drawing.Color.Transparent;
+            this.lblServicio.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblServicio.ForeColor = System.Drawing.Color.Black;
+            this.lblServicio.Location = new System.Drawing.Point(71, 132);
+            this.lblServicio.Name = "lblServicio";
+            this.lblServicio.Size = new System.Drawing.Size(91, 24);
+            this.lblServicio.TabIndex = 5;
+            this.lblServicio.Text = "Servicio";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -162,18 +174,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            // 
-            // lblServicio
-            // 
-            this.lblServicio.AutoSize = true;
-            this.lblServicio.BackColor = System.Drawing.Color.Transparent;
-            this.lblServicio.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblServicio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblServicio.Location = new System.Drawing.Point(71, 132);
-            this.lblServicio.Name = "lblServicio";
-            this.lblServicio.Size = new System.Drawing.Size(91, 24);
-            this.lblServicio.TabIndex = 5;
-            this.lblServicio.Text = "Servicio";
             // 
             // FormEliminarCita
             // 
