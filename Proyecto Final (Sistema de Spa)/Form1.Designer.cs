@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelContenedor = new System.Windows.Forms.Panel();
             this.btnSalir = new Guna.UI2.WinForms.Guna2Button();
             this.btnExportarCSV = new Guna.UI2.WinForms.Guna2Button();
             this.BtnElimninar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnActualizar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAgendar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnMostrar = new Guna.UI2.WinForms.Guna2Button();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.BackColor = System.Drawing.Color.PaleVioletRed;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.btnExportarCSV);
@@ -50,6 +52,7 @@
             this.panel1.Controls.Add(this.BtnActualizar);
             this.panel1.Controls.Add(this.BtnAgendar);
             this.panel1.Controls.Add(this.BtnMostrar);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -57,19 +60,11 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(318, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1183, 747);
-            this.panelContenedor.TabIndex = 2;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
-            // 
             // btnSalir
             // 
             this.btnSalir.BorderColor = System.Drawing.Color.White;
-            this.btnSalir.BorderThickness = 2;
+            this.btnSalir.BorderRadius = 10;
+            this.btnSalir.BorderThickness = 4;
             this.btnSalir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnSalir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnSalir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -90,7 +85,8 @@
             // btnExportarCSV
             // 
             this.btnExportarCSV.BorderColor = System.Drawing.Color.White;
-            this.btnExportarCSV.BorderThickness = 2;
+            this.btnExportarCSV.BorderRadius = 10;
+            this.btnExportarCSV.BorderThickness = 4;
             this.btnExportarCSV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnExportarCSV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnExportarCSV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -111,7 +107,8 @@
             // BtnElimninar
             // 
             this.BtnElimninar.BorderColor = System.Drawing.Color.White;
-            this.BtnElimninar.BorderThickness = 2;
+            this.BtnElimninar.BorderRadius = 10;
+            this.BtnElimninar.BorderThickness = 4;
             this.BtnElimninar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtnElimninar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BtnElimninar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -132,7 +129,8 @@
             // BtnActualizar
             // 
             this.BtnActualizar.BorderColor = System.Drawing.Color.White;
-            this.BtnActualizar.BorderThickness = 2;
+            this.BtnActualizar.BorderRadius = 10;
+            this.BtnActualizar.BorderThickness = 4;
             this.BtnActualizar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtnActualizar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BtnActualizar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -153,7 +151,8 @@
             // BtnAgendar
             // 
             this.BtnAgendar.BorderColor = System.Drawing.Color.White;
-            this.BtnAgendar.BorderThickness = 2;
+            this.BtnAgendar.BorderRadius = 10;
+            this.BtnAgendar.BorderThickness = 4;
             this.BtnAgendar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtnAgendar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BtnAgendar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -174,7 +173,8 @@
             // BtnMostrar
             // 
             this.BtnMostrar.BorderColor = System.Drawing.Color.White;
-            this.BtnMostrar.BorderThickness = 2;
+            this.BtnMostrar.BorderRadius = 10;
+            this.BtnMostrar.BorderThickness = 4;
             this.BtnMostrar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.BtnMostrar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.BtnMostrar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -192,6 +192,15 @@
             this.BtnMostrar.TabIndex = 1;
             this.BtnMostrar.Text = "Mostrar";
             this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(318, 0);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1183, 747);
+            this.panelContenedor.TabIndex = 2;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // frmHome
             // 
@@ -223,6 +232,7 @@
         private Guna.UI2.WinForms.Guna2Button btnExportarCSV;
         private Guna.UI2.WinForms.Guna2Button btnSalir;
         private System.Windows.Forms.Panel panelContenedor;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }
 
