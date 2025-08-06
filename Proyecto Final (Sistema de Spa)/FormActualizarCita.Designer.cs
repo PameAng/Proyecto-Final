@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.txtTerapeuta = new System.Windows.Forms.TextBox();
-            this.txtServicio = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
@@ -43,6 +42,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.btnBuscar = new Guna.UI2.WinForms.Guna2Button();
+            this.txtServicio = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,15 +54,6 @@
             this.txtTerapeuta.Name = "txtTerapeuta";
             this.txtTerapeuta.Size = new System.Drawing.Size(197, 28);
             this.txtTerapeuta.TabIndex = 0;
-            // 
-            // txtServicio
-            // 
-            this.txtServicio.BackColor = System.Drawing.Color.LightPink;
-            this.txtServicio.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtServicio.Location = new System.Drawing.Point(714, 339);
-            this.txtServicio.Name = "txtServicio";
-            this.txtServicio.Size = new System.Drawing.Size(124, 28);
-            this.txtServicio.TabIndex = 1;
             // 
             // txtNombre
             // 
@@ -214,12 +205,27 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // txtServicio
+            // 
+            this.txtServicio.BackColor = System.Drawing.Color.LightPink;
+            this.txtServicio.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtServicio.FormattingEnabled = true;
+            this.txtServicio.Items.AddRange(new object[] {
+            "Masaje",
+            "Facial",
+            "Manicura"});
+            this.txtServicio.Location = new System.Drawing.Point(714, 336);
+            this.txtServicio.Name = "txtServicio";
+            this.txtServicio.Size = new System.Drawing.Size(197, 29);
+            this.txtServicio.TabIndex = 16;
+            // 
             // FormActualizarCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1393, 753);
+            this.Controls.Add(this.txtServicio);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -233,7 +239,6 @@
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtServicio);
             this.Controls.Add(this.txtTerapeuta);
             this.Name = "FormActualizarCita";
             this.Text = "FormActualizarCita";
@@ -247,7 +252,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtTerapeuta;
-        private System.Windows.Forms.TextBox txtServicio;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtID;
         private Guna.UI2.WinForms.Guna2Button btnBuscar;
@@ -261,5 +265,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox txtServicio;
     }
 }
