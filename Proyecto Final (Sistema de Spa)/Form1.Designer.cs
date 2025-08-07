@@ -104,7 +104,7 @@
             this.btnSalir.FillColor = System.Drawing.Color.Black;
             this.btnSalir.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnSalir.HoverState.FillColor = System.Drawing.Color.Red;
             this.btnSalir.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_salida_48;
             this.btnSalir.ImageSize = new System.Drawing.Size(30, 30);
             this.btnSalir.Location = new System.Drawing.Point(42, 646);
