@@ -182,12 +182,13 @@
             // 
             // dtpHora
             // 
+            this.dtpHora.CustomFormat = "HH:mm";
             this.dtpHora.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpHora.Location = new System.Drawing.Point(702, 331);
             this.dtpHora.Name = "dtpHora";
             this.dtpHora.ShowUpDown = true;
-            this.dtpHora.Size = new System.Drawing.Size(280, 29);
+            this.dtpHora.Size = new System.Drawing.Size(134, 29);
             this.dtpHora.TabIndex = 13;
             this.dtpHora.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 

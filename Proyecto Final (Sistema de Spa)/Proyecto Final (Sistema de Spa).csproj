@@ -164,5 +164,20 @@
   <ItemGroup>
     <None Include="Resources\ale-romo-CLiwQXx7kT8-unsplash.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-importar-csv-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-actualizar-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-property-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-salida-48.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

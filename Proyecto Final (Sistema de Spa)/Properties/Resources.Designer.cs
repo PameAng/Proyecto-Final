@@ -113,6 +113,16 @@ namespace Proyecto_Final__Sistema_de_Spa_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_actualizar_40 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-actualizar-40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_buscar_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8_buscar_64", resourceCulture);
@@ -133,6 +143,16 @@ namespace Proyecto_Final__Sistema_de_Spa_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-delete-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_eliminar_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-eliminar-100", resourceCulture);
@@ -146,6 +166,36 @@ namespace Proyecto_Final__Sistema_de_Spa_.Properties {
         internal static System.Drawing.Bitmap icons8_guardar_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8_guardar_40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_importar_csv_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-importar-csv-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_property_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-property-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_salida_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-salida-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.timerBanner = new System.Windows.Forms.Timer(this.components);
+            this.pictureBoxBanner = new System.Windows.Forms.PictureBox();
             this.btnSalir = new Guna.UI2.WinForms.Guna2Button();
             this.btnExportarCSV = new Guna.UI2.WinForms.Guna2Button();
             this.BtnElimninar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnActualizar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAgendar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnMostrar = new Guna.UI2.WinForms.Guna2Button();
-            this.panelContenedor = new System.Windows.Forms.Panel();
-            this.pictureBoxBanner = new System.Windows.Forms.PictureBox();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.timerBanner = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).BeginInit();
@@ -64,6 +64,34 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Controls.Add(this.pictureBoxBanner);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(318, 0);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1183, 747);
+            this.panelContenedor.TabIndex = 2;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
+            // 
+            // timerBanner
+            // 
+            this.timerBanner.Enabled = true;
+            this.timerBanner.Interval = 3000;
+            this.timerBanner.Tick += new System.EventHandler(this.timerBanner_Tick);
+            // 
+            // pictureBoxBanner
+            // 
+            this.pictureBoxBanner.BackColor = System.Drawing.Color.Pink;
+            this.pictureBoxBanner.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxBanner.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxBanner.Name = "pictureBoxBanner";
+            this.pictureBoxBanner.Size = new System.Drawing.Size(1183, 747);
+            this.pictureBoxBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxBanner.TabIndex = 0;
+            this.pictureBoxBanner.TabStop = false;
+            this.pictureBoxBanner.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // btnSalir
             // 
             this.btnSalir.BorderColor = System.Drawing.Color.White;
@@ -77,7 +105,7 @@
             this.btnSalir.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnSalir.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_cerrar_ventana_48;
+            this.btnSalir.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_salida_48;
             this.btnSalir.ImageSize = new System.Drawing.Size(30, 30);
             this.btnSalir.Location = new System.Drawing.Point(42, 646);
             this.btnSalir.Name = "btnSalir";
@@ -99,7 +127,7 @@
             this.btnExportarCSV.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExportarCSV.ForeColor = System.Drawing.Color.White;
             this.btnExportarCSV.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnExportarCSV.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
+            this.btnExportarCSV.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_importar_csv_48;
             this.btnExportarCSV.ImageSize = new System.Drawing.Size(30, 30);
             this.btnExportarCSV.Location = new System.Drawing.Point(42, 506);
             this.btnExportarCSV.Name = "btnExportarCSV";
@@ -121,8 +149,8 @@
             this.BtnElimninar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnElimninar.ForeColor = System.Drawing.Color.White;
             this.BtnElimninar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BtnElimninar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_eliminar_100;
-            this.BtnElimninar.ImageSize = new System.Drawing.Size(55, 45);
+            this.BtnElimninar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_delete_64;
+            this.BtnElimninar.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnElimninar.Location = new System.Drawing.Point(42, 379);
             this.BtnElimninar.Name = "BtnElimninar";
             this.BtnElimninar.Size = new System.Drawing.Size(219, 71);
@@ -143,7 +171,7 @@
             this.BtnActualizar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnActualizar.ForeColor = System.Drawing.Color.White;
             this.BtnActualizar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BtnActualizar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
+            this.BtnActualizar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_actualizar_40;
             this.BtnActualizar.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnActualizar.Location = new System.Drawing.Point(42, 266);
             this.BtnActualizar.Name = "BtnActualizar";
@@ -188,7 +216,7 @@
             this.BtnMostrar.ForeColor = System.Drawing.Color.White;
             this.BtnMostrar.HoverState.BorderColor = System.Drawing.Color.White;
             this.BtnMostrar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BtnMostrar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._5099674;
+            this.BtnMostrar.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources.icons8_property_48;
             this.BtnMostrar.ImageSize = new System.Drawing.Size(30, 30);
             this.BtnMostrar.Location = new System.Drawing.Point(42, 140);
             this.BtnMostrar.Name = "BtnMostrar";
@@ -196,34 +224,6 @@
             this.BtnMostrar.TabIndex = 1;
             this.BtnMostrar.Text = "Mostrar";
             this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Controls.Add(this.pictureBoxBanner);
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(318, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1183, 747);
-            this.panelContenedor.TabIndex = 2;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
-            // 
-            // pictureBoxBanner
-            // 
-            this.pictureBoxBanner.BackColor = System.Drawing.Color.Pink;
-            this.pictureBoxBanner.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxBanner.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxBanner.Name = "pictureBoxBanner";
-            this.pictureBoxBanner.Size = new System.Drawing.Size(1183, 747);
-            this.pictureBoxBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxBanner.TabIndex = 0;
-            this.pictureBoxBanner.TabStop = false;
-            this.pictureBoxBanner.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // timerBanner
-            // 
-            this.timerBanner.Enabled = true;
-            this.timerBanner.Interval = 3000;
-            this.timerBanner.Tick += new System.EventHandler(this.timerBanner_Tick);
             // 
             // frmHome
             // 

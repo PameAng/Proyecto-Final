@@ -68,7 +68,7 @@ namespace Proyecto_Final__Sistema_de_Spa_
             if (!Regex.IsMatch(txtNombreCliente.Text, @"^[a-zA-Z\s]+$") ||
         !Regex.IsMatch(txtTerapeuta.Text, @"^[a-zA-Z\s]+$"))
             {
-                MessageBox.Show("El nombre del cliente y del terapeuta solo deben contener letras.");
+                MessageBox.Show("El nombre del cliente y del terapeuta es obligatorio.");
                 return;
             }
 
@@ -99,6 +99,11 @@ namespace Proyecto_Final__Sistema_de_Spa_
 
         private void FormAgendarCita_Load(object sender, EventArgs e)
         {
+            dtpHora.Format = DateTimePickerFormat.Custom;
+            dtpHora.CustomFormat = "HH:mm";
+
+            
+            dtpHora.ShowUpDown = true;
 
         }
 
