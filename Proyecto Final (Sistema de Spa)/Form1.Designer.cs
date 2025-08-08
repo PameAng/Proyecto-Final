@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panelContenedor = new System.Windows.Forms.Panel();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.timerBanner = new System.Windows.Forms.Timer(this.components);
-            this.pictureBoxBanner = new System.Windows.Forms.PictureBox();
             this.btnSalir = new Guna.UI2.WinForms.Guna2Button();
             this.btnExportarCSV = new Guna.UI2.WinForms.Guna2Button();
             this.BtnElimninar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnActualizar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnAgendar = new Guna.UI2.WinForms.Guna2Button();
             this.BtnMostrar = new Guna.UI2.WinForms.Guna2Button();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.pictureBoxBanner = new System.Windows.Forms.PictureBox();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.timerBanner = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panelContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBanner)).BeginInit();
@@ -63,34 +63,6 @@
             this.panel1.Size = new System.Drawing.Size(318, 747);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Controls.Add(this.pictureBoxBanner);
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(318, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1183, 747);
-            this.panelContenedor.TabIndex = 2;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
-            // 
-            // timerBanner
-            // 
-            this.timerBanner.Enabled = true;
-            this.timerBanner.Interval = 3000;
-            this.timerBanner.Tick += new System.EventHandler(this.timerBanner_Tick);
-            // 
-            // pictureBoxBanner
-            // 
-            this.pictureBoxBanner.BackColor = System.Drawing.Color.Pink;
-            this.pictureBoxBanner.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxBanner.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxBanner.Name = "pictureBoxBanner";
-            this.pictureBoxBanner.Size = new System.Drawing.Size(1183, 747);
-            this.pictureBoxBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxBanner.TabIndex = 0;
-            this.pictureBoxBanner.TabStop = false;
-            this.pictureBoxBanner.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnSalir
             // 
@@ -224,6 +196,34 @@
             this.BtnMostrar.TabIndex = 1;
             this.BtnMostrar.Text = "Mostrar";
             this.BtnMostrar.Click += new System.EventHandler(this.BtnMostrar_Click);
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Controls.Add(this.pictureBoxBanner);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(318, 0);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1183, 747);
+            this.panelContenedor.TabIndex = 2;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
+            // 
+            // pictureBoxBanner
+            // 
+            this.pictureBoxBanner.BackColor = System.Drawing.Color.Pink;
+            this.pictureBoxBanner.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxBanner.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxBanner.Name = "pictureBoxBanner";
+            this.pictureBoxBanner.Size = new System.Drawing.Size(1183, 747);
+            this.pictureBoxBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxBanner.TabIndex = 0;
+            this.pictureBoxBanner.TabStop = false;
+            this.pictureBoxBanner.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // timerBanner
+            // 
+            this.timerBanner.Enabled = true;
+            this.timerBanner.Interval = 3000;
+            this.timerBanner.Tick += new System.EventHandler(this.timerBanner_Tick);
             // 
             // frmHome
             // 
