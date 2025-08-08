@@ -47,7 +47,7 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(361, 135);
+            this.lblID.Location = new System.Drawing.Point(370, 176);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(144, 24);
             this.lblID.TabIndex = 0;
@@ -75,7 +75,7 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(511, 132);
+            this.txtID.Location = new System.Drawing.Point(520, 173);
             this.txtID.Multiline = true;
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(115, 29);
@@ -94,7 +94,7 @@
             this.btnBuscar.FillColor2 = System.Drawing.Color.LightPink;
             this.btnBuscar.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(651, 132);
+            this.btnBuscar.Location = new System.Drawing.Point(660, 173);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(115, 27);
             this.btnBuscar.TabIndex = 5;
@@ -112,7 +112,7 @@
             this.btnEliminar.FillColor2 = System.Drawing.Color.LightPink;
             this.btnEliminar.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(354, 549);
+            this.btnEliminar.Location = new System.Drawing.Point(363, 590);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(180, 45);
             this.btnEliminar.TabIndex = 6;
@@ -131,7 +131,7 @@
             this.btnCancelar.FillColor2 = System.Drawing.Color.LightPink;
             this.btnCancelar.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(584, 549);
+            this.btnCancelar.Location = new System.Drawing.Point(593, 590);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(180, 45);
             this.btnCancelar.TabIndex = 7;
@@ -145,7 +145,7 @@
             this.grpDetalles.Controls.Add(this.lblFecha);
             this.grpDetalles.Controls.Add(this.lblCliente);
             this.grpDetalles.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpDetalles.Location = new System.Drawing.Point(252, 200);
+            this.grpDetalles.Location = new System.Drawing.Point(261, 241);
             this.grpDetalles.Name = "grpDetalles";
             this.grpDetalles.Size = new System.Drawing.Size(627, 299);
             this.grpDetalles.TabIndex = 8;
@@ -180,7 +180,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(418, 0);
+            this.label1.Location = new System.Drawing.Point(427, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(333, 91);
             this.label1.TabIndex = 10;
