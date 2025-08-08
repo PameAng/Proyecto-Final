@@ -76,8 +76,9 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.CustomFormat = "\"dd-MM-yyyy\";";
+            this.dtpFecha.CustomFormat = "dd-MM-yyyy;";
             this.dtpFecha.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha.Location = new System.Drawing.Point(1170, 293);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(200, 28);

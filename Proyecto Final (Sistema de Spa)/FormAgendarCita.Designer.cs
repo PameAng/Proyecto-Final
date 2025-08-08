@@ -64,10 +64,11 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.CustomFormat = "\"dd-MM-yyyy\";";
+            this.dtpFecha.CustomFormat = "dd-MM-yyyy;";
             this.dtpFecha.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha.Location = new System.Drawing.Point(702, 275);
+            this.dtpFecha.MaxDate = new System.DateTime(2025, 9, 30, 0, 0, 0, 0);
             this.dtpFecha.MinDate = new System.DateTime(2025, 8, 6, 0, 0, 0, 0);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(280, 29);

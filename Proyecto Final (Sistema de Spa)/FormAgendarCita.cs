@@ -107,6 +107,8 @@ namespace Proyecto_Final__Sistema_de_Spa_
 
             dtpHora.ShowUpDown = true;
 
+            dtpFecha.MinDate = DateTime.Today;
+
         }
 
         private void textBoxID_TextChanged(object sender, EventArgs e)
