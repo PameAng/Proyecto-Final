@@ -94,7 +94,9 @@ namespace Proyecto_Final__Sistema_de_Spa_
 
             homeForm.listaCitas.Add(cita);
             MessageBox.Show("Cita agendada con éxito.");
-            
+
+            LimpiarCampos();
+
         }
 
         private void FormAgendarCita_Load(object sender, EventArgs e)
@@ -102,14 +104,14 @@ namespace Proyecto_Final__Sistema_de_Spa_
             dtpHora.Format = DateTimePickerFormat.Custom;
             dtpHora.CustomFormat = "HH:mm";
 
-            
+
             dtpHora.ShowUpDown = true;
 
         }
 
         private void textBoxID_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txtNombreCliente_TextChanged(object sender, EventArgs e)
@@ -124,7 +126,7 @@ namespace Proyecto_Final__Sistema_de_Spa_
             if (limpio != tb.Text)
             {
                 tb.Text = limpio;
-                tb.SelectionStart = pos > 0 ? pos - 1 : 0; 
+                tb.SelectionStart = pos > 0 ? pos - 1 : 0;
             }
         }
 
@@ -143,11 +145,9 @@ namespace Proyecto_Final__Sistema_de_Spa_
                 tb.SelectionStart = pos > 0 ? pos - 1 : 0;
             }
         }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            LimpiarCampos();
-            MessageBox.Show("Listo para ingresar una nueva cita.", "Nueva Cita", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
     }
 }
+        
+
+        
+

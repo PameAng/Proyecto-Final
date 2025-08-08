@@ -48,7 +48,7 @@
             this.txtRestante = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnNuevaCita = new Guna.UI2.WinForms.Guna2Button();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -213,7 +213,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.HoverState.FillColor = System.Drawing.Color.HotPink;
-            this.btnGuardar.Location = new System.Drawing.Point(737, 551);
+            this.btnGuardar.Location = new System.Drawing.Point(964, 584);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(230, 85);
             this.btnGuardar.TabIndex = 15;
@@ -272,23 +272,15 @@
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
-            // btnNuevaCita
+            // label10
             // 
-            this.btnNuevaCita.BackColor = System.Drawing.Color.DeepPink;
-            this.btnNuevaCita.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNuevaCita.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNuevaCita.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNuevaCita.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNuevaCita.FillColor = System.Drawing.Color.DeepPink;
-            this.btnNuevaCita.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevaCita.ForeColor = System.Drawing.Color.White;
-            this.btnNuevaCita.HoverState.FillColor = System.Drawing.Color.HotPink;
-            this.btnNuevaCita.Location = new System.Drawing.Point(1130, 551);
-            this.btnNuevaCita.Name = "btnNuevaCita";
-            this.btnNuevaCita.Size = new System.Drawing.Size(230, 85);
-            this.btnNuevaCita.TabIndex = 21;
-            this.btnNuevaCita.Text = "Nueva Cita";
-            this.btnNuevaCita.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(772, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(560, 97);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Agendar Cita";
             // 
             // FormAgendarCita
             // 
@@ -296,7 +288,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1478, 753);
-            this.Controls.Add(this.btnNuevaCita);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtRestante);
@@ -348,6 +340,6 @@
         private System.Windows.Forms.TextBox txtRestante;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2Button btnNuevaCita;
+        private System.Windows.Forms.Label label10;
     }
 }

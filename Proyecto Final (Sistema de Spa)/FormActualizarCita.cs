@@ -68,9 +68,26 @@ namespace Proyecto_Final__Sistema_de_Spa_
                 citaActual.CalcularDuracion();
 
                 MessageBox.Show("Cita actualizada correctamente.");
-                
+
+                LimpiarCampos(); 
+
+                citaActual = null;
+
+
             }
         }
+
+        private void LimpiarCampos()
+        {
+            txtID.Clear();
+            txtNombre.Clear();
+            dtpFecha.Value = DateTime.Now;
+            dtpHora.Value = DateTime.Now;
+            txtServicio.SelectedIndex = -1;
+            txtTerapeuta.Clear();
+        }
+
+
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -78,6 +95,11 @@ namespace Proyecto_Final__Sistema_de_Spa_
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }

@@ -36,8 +36,9 @@
             this.btnEliminar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnCancelar = new Guna.UI2.WinForms.Guna2GradientButton();
             this.grpDetalles = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblServicio = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpDetalles.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +47,7 @@
             // 
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(364, 110);
+            this.lblID.Location = new System.Drawing.Point(361, 135);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(144, 24);
             this.lblID.TabIndex = 0;
@@ -74,7 +75,7 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(514, 107);
+            this.txtID.Location = new System.Drawing.Point(511, 132);
             this.txtID.Multiline = true;
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(115, 29);
@@ -93,7 +94,7 @@
             this.btnBuscar.FillColor2 = System.Drawing.Color.LightPink;
             this.btnBuscar.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(654, 107);
+            this.btnBuscar.Location = new System.Drawing.Point(651, 132);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(115, 27);
             this.btnBuscar.TabIndex = 5;
@@ -144,24 +145,13 @@
             this.grpDetalles.Controls.Add(this.lblFecha);
             this.grpDetalles.Controls.Add(this.lblCliente);
             this.grpDetalles.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpDetalles.Location = new System.Drawing.Point(255, 175);
+            this.grpDetalles.Location = new System.Drawing.Point(252, 200);
             this.grpDetalles.Name = "grpDetalles";
             this.grpDetalles.Size = new System.Drawing.Size(627, 299);
             this.grpDetalles.TabIndex = 8;
             this.grpDetalles.TabStop = false;
             this.grpDetalles.Text = "Datos ";
             this.grpDetalles.Enter += new System.EventHandler(this.grpDetalles_Enter);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._1;
-            this.pictureBox1.Location = new System.Drawing.Point(1116, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(289, 753);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // lblServicio
             // 
@@ -175,12 +165,34 @@
             this.lblServicio.TabIndex = 6;
             this.lblServicio.Text = "Servicio";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::Proyecto_Final__Sistema_de_Spa_.Properties.Resources._1;
+            this.pictureBox1.Location = new System.Drawing.Point(1116, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(289, 753);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(418, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(333, 91);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Eliminar";
+            // 
             // FormEliminarCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1405, 753);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancelar);
@@ -211,5 +223,6 @@
         private System.Windows.Forms.GroupBox grpDetalles;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblServicio;
+        private System.Windows.Forms.Label label1;
     }
 }

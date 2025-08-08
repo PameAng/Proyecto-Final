@@ -14,6 +14,8 @@ namespace Proyecto_Final__Sistema_de_Spa_
     {
         private List<Cita> citas; 
         private Cita citaSeleccionada;
+
+
         public FormEliminarCita(List<Cita> listaCitas)
 
         {
@@ -23,9 +25,25 @@ namespace Proyecto_Final__Sistema_de_Spa_
 
         }
 
+        private void LimpiarCampos()
+        {
+            
+            txtID.Clear();
+
+            lblCliente.Text = "Cliente:";
+            lblServicio.Text = "Servicio:";
+            lblFecha.Text = "Fecha:";
+
+            
+            grpDetalles.Enabled = false;
+
+            
+            citaSeleccionada = null;
+        }
+
         private void FormEliminarCita_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -61,7 +79,9 @@ namespace Proyecto_Final__Sistema_de_Spa_
                 {
                     citas.Remove(citaSeleccionada);
                     MessageBox.Show("Cita eliminada.");
-                    
+
+                    LimpiarCampos();
+
                 }
             }
         }
@@ -75,6 +95,7 @@ namespace Proyecto_Final__Sistema_de_Spa_
         {
 
         }
+
 
         private void txtID_TextChanged(object sender, EventArgs e)
         {

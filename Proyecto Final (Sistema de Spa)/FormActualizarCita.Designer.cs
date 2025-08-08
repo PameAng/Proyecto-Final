@@ -43,6 +43,7 @@
             this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
             this.btnBuscar = new Guna.UI2.WinForms.Guna2Button();
             this.txtServicio = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -220,12 +221,24 @@
             this.txtServicio.Size = new System.Drawing.Size(197, 29);
             this.txtServicio.TabIndex = 16;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(684, 21);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(444, 97);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Actualizar";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // FormActualizarCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1393, 753);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtServicio);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -267,5 +280,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox txtServicio;
+        private System.Windows.Forms.Label label7;
     }
 }
