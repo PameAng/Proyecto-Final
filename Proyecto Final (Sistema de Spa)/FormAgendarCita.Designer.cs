@@ -78,6 +78,7 @@
             // cmbServicio
             // 
             this.cmbServicio.BackColor = System.Drawing.Color.LightPink;
+            this.cmbServicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbServicio.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbServicio.FormattingEnabled = true;
             this.cmbServicio.Items.AddRange(new object[] {

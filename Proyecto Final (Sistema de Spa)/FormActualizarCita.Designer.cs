@@ -211,6 +211,7 @@
             // txtServicio
             // 
             this.txtServicio.BackColor = System.Drawing.Color.LightPink;
+            this.txtServicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtServicio.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtServicio.FormattingEnabled = true;
             this.txtServicio.Items.AddRange(new object[] {

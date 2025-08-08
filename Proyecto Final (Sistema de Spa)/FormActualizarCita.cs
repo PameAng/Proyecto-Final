@@ -26,6 +26,8 @@ namespace Proyecto_Final__Sistema_de_Spa_
         private void FormActualizarCita_Load(object sender, EventArgs e)
         {
             dtpFecha.MinDate = DateTime.Today;
+            dtpHora.Format = DateTimePickerFormat.Custom;
+            dtpHora.CustomFormat = "HH:mm";
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
